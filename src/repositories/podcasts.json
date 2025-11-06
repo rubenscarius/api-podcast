@@ -10,5 +10,17 @@
     "episode": "RUBENS BARRICHELLO - Flow #339",
     "videoId": "4KDGTdiOV4I",
     "categories": ["esporte", "corrida"]
+  },
+  {
+    "podcastName": "ltda",
+    "episode": "DA INVENÇÃO DO COMPUTADOR À INTELIGÊNCIA ARTIFICIAL - FÁBIO AKITA - Inteligência Ltda. Podcast #1228",
+    "videoId": "jVxzpiDJ9Qk&t",
+    "categories": ["inteligencia artificial", "tech"]
+  },
+  {
+    "podcastName": "redcast",
+    "episode": "episodio aleatorio",
+    "videoId": "idepisodio",
+    "categories": ["humor", "entretenimento"]
   }
 ]
