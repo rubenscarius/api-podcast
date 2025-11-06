@@ -3,6 +3,8 @@ import {
   getFilterEpisodes,
   getListEpisodes,
 } from "./controllers/podcasts-controllers";
+import { Routes } from "./routes/routes";
+import { HttpMethods } from "./utils/http-methods";
 
 const server = http.createServer(
   async (request: http.IncomingMessage, response: http.ServerResponse) => {
@@ -10,12 +12,12 @@ const server = http.createServer(
     const [baseUrl, queryString] = request.url?.split("?") || [];
 
     // List Episodes
-    if (request.method === "GET" && baseUrl === "/api/list") {
+    if (request.method === HttpMethods.GET && baseUrl === Routes.LIST) {
       await getListEpisodes(request, response);
     }
 
     // Filter Episodes
-    if (request.method === "GET" && baseUrl === "/api/episode") {
+    if (request.method === HttpMethods.GET && baseUrl === Routes.EPISODE) {
       await getFilterEpisodes(request, response);
     }
   }
